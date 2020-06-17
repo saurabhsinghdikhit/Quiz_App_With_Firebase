@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".update_question">
+
+    <Spinner
+        android:id="@+id/updquestiondrop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"></Spinner>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:editable="false"
+        android:elevation="2dp"
+        android:background="@drawable/textboxbackground"
+        android:hint="Question ID"
+        android:id="@+id/updtxtinsquesid"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:background="@drawable/textboxbackground"
+        android:hint="Question Title"
+        android:id="@+id/updtxtinsquestital"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:background="@drawable/textboxbackground"
+        android:hint="Option 1"
+        android:id="@+id/updtxtinsquesop1"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:background="@drawable/textboxbackground"
+        android:hint="Option 2"
+        android:id="@+id/updtxtinsquesop2"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:background="@drawable/textboxbackground"
+        android:hint="Option 3"
+        android:id="@+id/updtxtinsquesop3"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:background="@drawable/textboxbackground"
+        android:hint="Option 4"
+        android:id="@+id/updtxtinsquesop4"></EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Answer:"></TextView>
+        <Spinner
+            android:id="@+id/updinsselectans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog">
+
+        </Spinner>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/textboxbackground"
+        android:id="@+id/updbtnque"
+        android:text="Update"></Button>
+</LinearLayout>

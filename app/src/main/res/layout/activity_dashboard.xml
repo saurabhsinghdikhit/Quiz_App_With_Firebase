@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".dashboard">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:elevation="20dp"
+        android:background="@drawable/textboxbackground">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/txtadmin"
+            android:padding="15dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"></TextView>
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:id="@+id/im_adminlogout"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_splash"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <Button
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/dashboardinsertbtn"
+            android:layout_height="wrap_content"
+            android:text="insert question"
+            android:padding="10dp"
+            android:elevation="20dp"
+            android:background="@drawable/textboxbackground"
+            />
+        <Button
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/dashboardupdbtnbyspinner"
+            android:layout_height="wrap_content"
+            android:text="Update questions by spinner"
+            android:padding="10dp"
+            android:elevation="20dp"
+            android:background="@drawable/textboxbackground"
+            />
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/dashboardshowbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:elevation="20dp"
+            android:background="@drawable/textboxbackground"
+            android:text="Show questions"/>
+    </LinearLayout>
+
+
+</LinearLayout>

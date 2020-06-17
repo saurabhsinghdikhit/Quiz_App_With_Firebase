@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".quiz_type_selection">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:elevation="20dp"
+        android:background="@drawable/textboxbackground">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/txtuser"
+            android:padding="15dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"></TextView>
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:id="@+id/im_userlogout"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_splash"
+            />
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBarquiz"
+        style="?android:attr/progressBarStyle"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/quiz_selection"
+        android:gravity="top|center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select category of the questions"
+            android:padding="10dp"
+            android:layout_marginTop="80dp"
+            android:elevation="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/textboxbackground"
+            ></TextView>
+        <Spinner
+            android:id="@+id/questiontypedrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:spinnerMode="dialog"></Spinner>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:elevation="20dp"
+            android:id="@+id/startquizbtn"
+            android:background="@drawable/textboxbackground"
+            android:text="Start Quiz"></Button>
+
+    </LinearLayout>
+</LinearLayout>

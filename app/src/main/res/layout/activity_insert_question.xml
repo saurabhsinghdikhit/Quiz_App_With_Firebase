@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".insert_question">
+
+    <Spinner
+        android:id="@+id/questiondrop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"></Spinner>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:editable="false"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:background="@drawable/textboxbackground"
+        android:hint="Question ID"
+        android:id="@+id/txtinsquesid"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:background="@drawable/textboxbackground"
+        android:hint="Question Title"
+        android:id="@+id/txtinsquestital"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:background="@drawable/textboxbackground"
+        android:hint="Option 1"
+        android:id="@+id/txtinsquesop1"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:background="@drawable/textboxbackground"
+        android:hint="Option 2"
+        android:id="@+id/txtinsquesop2"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:background="@drawable/textboxbackground"
+        android:hint="Option 3"
+        android:id="@+id/txtinsquesop3"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:background="@drawable/textboxbackground"
+        android:hint="Option 4"
+        android:id="@+id/txtinsquesop4"></EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Answer:"></TextView>
+        <Spinner
+            android:id="@+id/insselectans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog">
+
+        </Spinner>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:background="@drawable/textboxbackground"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btninsque"
+        android:text="Insert"></Button>
+</LinearLayout>

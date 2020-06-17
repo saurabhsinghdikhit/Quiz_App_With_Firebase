@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".login">
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/splashiconbackground"
+        android:src="@drawable/ic_splash"
+        android:elevation="10dp"
+        android:id="@+id/imglogin"
+        android:layout_margin="20dp"
+        android:padding="20dp">
+    </ImageView>
+    <EditText
+        android:id="@+id/txtnm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="15dp"
+        android:elevation="20dp"
+        android:background="@drawable/textboxbackground"
+        android:inputType="textEmailAddress"
+        android:hint="Email ID"
+
+        android:layout_marginTop="50dp"
+
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"/>
+    <EditText
+        android:id="@+id/txtpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="15dp"
+        android:elevation="20dp"
+        android:background="@drawable/textboxbackground"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnlogin"
+        android:text="Login"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:elevation="20dp"
+        android:background="@drawable/textboxbackground"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnegisinlogin"
+        android:text="Register"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:elevation="20dp"
+        android:background="@drawable/textboxbackground"></Button>
+</LinearLayout>
